@@ -1,2 +1,2 @@
 # OOP-Hangman-game
-Hangman game,temporarily without API
+Hangman game, temporarily without API and Polish characters.
