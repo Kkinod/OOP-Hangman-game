@@ -1,6 +1,6 @@
 export class Quote {
 	constructor(text) {
-		this.text = text
+		this.text = text.toUpperCase()
 		this.guessed = []
 	}
 
