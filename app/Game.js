@@ -83,7 +83,7 @@ class Game {
 
 	drawLetters() {
 		for (let i = 0; i < 26; i++) {
-			const label = (i + 10).toString(36) // 36 w metodzie toString oznacza, że funkcja zwróci liczbę sformatowaną w systemie o podstawie 36 i zmienioną na tym String. W systemie 36 liczby oparte są na znakach 0-9 a następnie A-Z. Czyli 0 = 0, 1 = 1... 9 = 9 i dopiero wtedy 10 = A, 11 = B... . A, że chcemy by uwzględniało tylko litery to zaczynamy od 10 (i+10). Jeśli wywołamy to w konsoli, to zwróci nam litery od "a" do "z"
+			const label = (i + 10).toString(36).toUpperCase() // 36 w metodzie toString oznacza, że funkcja zwróci liczbę sformatowaną w systemie o podstawie 36 i zmienioną na tym String. W systemie 36 liczby oparte są na znakach 0-9 a następnie A-Z. Czyli 0 = 0, 1 = 1... 9 = 9 i dopiero wtedy 10 = A, 11 = B... . A, że chcemy by uwzględniało tylko litery to zaczynamy od 10 (i+10). Jeśli wywołamy to w konsoli, to zwróci nam litery od "a" do "z"
 			const button = document.createElement('button') // Tworzymy button dla każdej litery
 			button.innerHTML = label // Do button'ów przypisujemy litery
 			this.lettersWrapper.appendChild(button) // dodajemy buttony na stronę
