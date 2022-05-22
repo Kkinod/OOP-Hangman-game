@@ -1,0 +1,224 @@
+.board {
+	max-width: 120rem;
+	margin: 8rem auto;
+
+	@media only screen and (max-width: $bp-smallest2) {
+		margin-top: 0;
+	}
+
+	&__hangman-elements {
+		opacity: 0;
+
+		&-bar {
+			width: 30%;
+		}
+
+		&-head {
+			position: relative;
+			width: 20%;
+			margin-left: 17%;
+			margin-top: -1%;
+			z-index: 1;
+		}
+        
+        &-neck {
+            width: 4%;
+            margin-top: -2%;
+            margin-left: 25%;
+        }
+              
+        &-corpus {
+            width: 15%;
+            margin-top: -2%;
+            margin-left: 19.5%;
+        }
+        
+        &-left-arm {
+            width: 18%;
+            position: absolute;
+            margin-top: -23.5%;
+            margin-left: 7.3%;
+        }
+        
+        &-left-hand {
+            position: absolute;
+            width: 5%;
+            margin-top: -10%;
+            margin-left: 6%;
+            z-index: -1;
+        }
+        
+        &-right-arm {
+            position: absolute;
+            width: 18%;
+            margin-top: -23.5%;
+            margin-left: 29%;
+        }
+        
+        &-right-hand {
+            position: absolute;
+            width: 5%;
+            margin-top: -10%;
+            margin-left: 43%;
+            z-index: -1;
+        }
+        
+        &-left-leg {
+            width: 35%;
+            margin-top: -2%;
+            margin-left: 10.7%;
+            z-index: -1;
+        }
+        
+        &-left-foot {
+            position: relative;
+            width: 35%;
+            margin-left: 6%;
+            margin-top: -2%;
+            z-index: -1;
+        
+            @media only screen and (max-width: $bp-smallest3) {
+                position: relative;
+                width: 35%;
+                margin-left: 6%;
+                margin-top: -4.2%;
+                z-index: -1;
+            }
+        }
+        
+        &-right-leg {
+            width: 35%;
+            margin-top: -21.8%;
+            margin-left: 20.2%;
+        
+            @media only screen and (max-width: $bp-large) {
+                width: 35%;
+                margin-top: -22.5%;
+                margin-left: 20.2%;
+            }
+        
+            @media only screen and (max-width: $bp-smallest) {
+                width: 35%;
+                margin-top: -23.5%;
+                margin-left: 20.2%;
+            }
+        }
+        
+        &-right-foot {
+            position: relative;
+            width: 35%;
+            margin-left: 24%;
+            margin-top: -2%;
+            z-index: -1;
+        
+            @media only screen and (max-width: $bp-smallest3) {
+                position: relative;
+                width: 35%;
+                margin-left: 24%;
+                margin-top: -3%;
+                z-index: -1;
+            }
+        }
+        
+	}
+
+    .neck {
+        @media only screen and (max-width: $bp-smallest3) {
+            margin-top: -2%;
+        }
+    }
+
+    .corpus {
+        position: relative;
+    }
+
+	&__text {
+		height: 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__word {
+		letter-spacing: 5px;
+		font-size: 4rem;
+		padding: 4rem 2rem;
+		border: 3px black solid;
+		text-align: center;
+        border-radius: 10px;
+	}
+
+	&__category {
+		font-size: 3rem;
+		text-align: center;
+		padding: 30px 0px;
+		text-transform: uppercase;
+
+		@media only screen and (max-width: $bp-smallest2) {
+			font-size: 2rem;
+			padding: 15px 0px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		height: 60vh;
+	}
+
+	&__hangman {
+		width: 50%;
+		height: 100%;
+	}
+
+    &__keyboard {
+        width: 70%;
+        height: 100%;
+    
+    }
+
+
+    &__letters {
+        padding: 10px 30px;
+    
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 5px;
+        }
+    
+        & button {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 1rem;
+    
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.5rem;
+                padding: 0.7rem;
+                margin: 0.7rem;
+            }
+        }
+    }
+}
+
+button {
+	height: 4rem;
+	width: 4rem;
+	border: none;
+    border-radius: 5px;
+
+	@media only screen and (max-width: $bp-smallest) {
+		height: 3rem;
+		width: 3rem;
+		border: none;
+	}
+}
+
+button:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+	outline: none;
+	transform: translateY(-1px);
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}

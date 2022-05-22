@@ -1,0 +1,34 @@
+$bp-largest: 75em; 		/*1200px*/
+$bp-large: 62.5em;		/*1000px*/
+
+$bp-medium: 56.25em; 	/*900px*/
+$bp-smallest: 37.5em; 	/*600px*/
+$bp-smallest2: 28.125em; 	/*450px*/
+$bp-smallest3: 31.25em; 	/*500px*/
+$bp-smallest4: 21.87em; 	/*350px*/
+
+
+// $bp-smallest: 31.25em; 	/*500px*/
+// $bp-smallest: 31.25em; 	/*500px*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	// height: 100vh;
+	box-sizing: border-box;
+	// background-color: #fff;
+	min-height: 100vh;
+}
