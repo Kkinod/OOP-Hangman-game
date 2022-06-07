@@ -1,3 +1,3 @@
 # OOP-Hangman-game
 Hangman game, temporarily without API and polish characters.
-Live: https://kkinod.github.io/OOP-Hangman-game/
+<a href="https://kkinod.github.io/OOP_TypeScript--Hangman-game/">LIVE</a>
