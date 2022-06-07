@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./JS-TS",
+        "target": "ES2015",
+        "module": "ES2015",
+        "strict": true,
+        "lib": ["DOM", "ES2016"]
+    }
+}
